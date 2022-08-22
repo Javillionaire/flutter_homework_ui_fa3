@@ -80,7 +80,7 @@ class _UIPage3 extends State<UIPage3> {
                               child: const Text(
                                 'Expanded chart',
                                 textAlign: TextAlign.left,
-                                style: TextStyle(fontSize: 20),
+                                style: TextStyle(fontSize: 18),
                               ),
                             ),
                           ]),
@@ -97,7 +97,7 @@ class _UIPage3 extends State<UIPage3> {
                           child: const Text(
                             'Fixed width container',
                             textAlign: TextAlign.left,
-                            style: TextStyle(fontSize: 20),
+                            style: TextStyle(fontSize: 18),
                           ),
                         )
                       ])),
