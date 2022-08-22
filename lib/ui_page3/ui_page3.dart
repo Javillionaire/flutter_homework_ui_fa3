@@ -21,8 +21,16 @@ class _UIPage3 extends State<UIPage3> {
             mainAxisAlignment: MainAxisAlignment.start,
             children: [
               Container(
+                alignment: Alignment.centerLeft,
+                padding: const EdgeInsets.only(left: 10, top: 5),
+                child: const Text(
+                  'Column',
+                  style: TextStyle(fontSize: 18, color: Colors.blue),
+                ),
+              ),
+              Container(
                 padding: const EdgeInsets.only(top: 10, left: 10),
-                margin: const EdgeInsets.only(top: 30, bottom: 20),
+                margin: const EdgeInsets.only(top: 10, bottom: 10),
                 decoration: BoxDecoration(
                     border: Border.all(width: 10, color: Colors.black)),
                 height: 150,
@@ -49,25 +57,37 @@ class _UIPage3 extends State<UIPage3> {
                       mainAxisAlignment: MainAxisAlignment.start,
                       children: [
                         Expanded(
-                          child: Container(
-                            margin: const EdgeInsets.only(
-                                bottom: 8, right: 5, left: 5, top: 90),
-                            alignment: Alignment.center,
-                            decoration: BoxDecoration(
-                                border:
-                                    Border.all(width: 10, color: Colors.red)),
-                            height: 350,
-                            width: 180,
-                            child: const Text(
-                              'Expanded chart',
-                              textAlign: TextAlign.left,
-                              style: TextStyle(fontSize: 20),
+                          child: Column(children: [
+                            Container(
+                              margin: const EdgeInsets.only(left: 15, top: 10),
+                              alignment: Alignment.centerLeft,
+                              child: const Text(
+                                'Row',
+                                textAlign: TextAlign.left,
+                                style: TextStyle(
+                                    fontSize: 20, color: Colors.purple),
+                              ),
                             ),
-                          ),
+                            Container(
+                              margin: const EdgeInsets.only(
+                                  bottom: 3, right: 5, left: 5, top: 25),
+                              alignment: Alignment.center,
+                              decoration: BoxDecoration(
+                                  border:
+                                      Border.all(width: 10, color: Colors.red)),
+                              height: 379,
+                              width: 180,
+                              child: const Text(
+                                'Expanded chart',
+                                textAlign: TextAlign.left,
+                                style: TextStyle(fontSize: 20),
+                              ),
+                            ),
+                          ]),
                         ),
                         Container(
                           padding: const EdgeInsets.only(top: 5, left: 5),
-                          margin: const EdgeInsets.all(5),
+                          margin: const EdgeInsets.all(8),
                           alignment: Alignment.topLeft,
                           decoration: BoxDecoration(
                               border:
